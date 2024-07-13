@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt-get install tor
 
 sudo service tor start
 
-git clone 
+git clone https://github.com/Npwps/flooder.git
 
 cd (path .py)
 
