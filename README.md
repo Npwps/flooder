@@ -11,3 +11,5 @@ cd (path .py)
 pip3 install bane
 
 python3 dos.py
+
+u can use local directory or using cloud terminal
