@@ -14,7 +14,7 @@ def get_input(prompt, validation_func, error_msg):
         print(error_msg)
 
 target = get_input(
-    bane.Fore.GREEN + '\nTarget IP / Domain: ' + bane.Fore.WHITE,
+    bane.Fore.GREEN + '\nIP / Domain: ' + bane.Fore.WHITE,
     lambda x: socket.gethostbyname(x),
     bane.Fore.RED + 'Please enter a valid choice..' + bane.Fore.WHITE
 )
@@ -44,7 +44,7 @@ duration = int(get_input(
 ))
 
 tor = get_input(
-    bane.Fore.GREEN + '\nIs TOR enabled? ( yes / no ) : ' + bane.Fore.WHITE,
+    bane.Fore.GREEN + '\nTOR enabled? ( yes / no ) : ' + bane.Fore.WHITE,
     lambda x: x.lower() in ['n', 'y', 'yes', 'no'],
     bane.Fore.RED + 'Please enter a valid choice..' + bane.Fore.WHITE
 ).lower() in ['y', 'yes']
@@ -56,7 +56,7 @@ method = int(get_input(
 ))
 
 spam_mode = get_input(
-    bane.Fore.GREEN + '\nDo you want to enable "spam" mode? ( yes / no ) : ' + bane.Fore.WHITE,
+    bane.Fore.GREEN + '\n"spam" mode? ( yes / no ) : ' + bane.Fore.WHITE,
     lambda x: x.lower() in ['n', 'y', 'yes', 'no'],
     bane.Fore.RED + 'Please enter a valid choice..' + bane.Fore.WHITE
 ).lower() in ['y', 'yes']
